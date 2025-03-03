@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+</head>
+<body>
+    <div class="w-full min-h-screen bg-zinc-800">
+        <div class="form p-10 text-white">
+            <form action="/edit" method="post">
+                <a href="/" class="text-blue-500 inline-block mb-10">Go Back to Home</a>
+                <input class="block w-1/2 rounded-md outline-none px-5 py-2 bg-zinc-700 " type="text" name="old_name" value="<%= old_name%>">
+                <input class="block w-1/2 rounded-md outline-none mt-2 px-5 py-2 bg-zinc-700 resize-none" name="new_name" id="" placeholder="New Name For The File here...">
+                <input class="mt-2 bg-yellow-600 px-5 py-2 rounded-md" type="submit" value="Rename">
+            </form>
+        </div>
+        
+     </div>
+</body>
+</html>
